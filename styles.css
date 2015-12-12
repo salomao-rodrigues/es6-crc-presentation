@@ -1,0 +1,15 @@
+.no-support-message { display: none; }
+.impress-not-supported .no-support-message { display: block; }
+
+body {
+    background: #EBEBEB;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 50px;
+    color: #333;
+}
+
+.step {
+    width: 940px;
+    margin: 0 auto 24px;
+    text-align:center;
+}
