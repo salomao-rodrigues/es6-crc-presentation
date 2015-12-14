@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>ECMAScript 6</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+        <link href="assets/stylesheets/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="logo">
+            <img src="assets/images/circle-logo.svg">
+        </div>
+        <div class="header">
+            ECMAScript 6
+        </div>
+        <div id="impress">
+            <div class="no-support-message">
+                Sorry! Your browser is unable to load the Impress slideshow. Try reloading the page in Google Chrome or Safari.
+            </div>
+            <div class="scaled step" id="intro">
+                <h1>ECMAScript 6</h1>
+                <p>Run through basic new features</p>
+            </div>
+            <div class="scaled step" id="contents" data-x="150">
+                <h2>Contents</h2>
+                <ul>
+                    <li>What is it?</li>
+                    <li>Why do I need it</li>
+                </ul>
+            </div>
+            <div class="scaled step" data-x="300">
+                <h2>The <strong>var</strong> keyword</h2>
+                <ul>
+                    <li>Function scoped</li>
+                    <li>Error prone</li>
+                    <li>Less readable</li>
+                    <li>Harder to debug</li>
+                </ul>
+
+            </div>
+            <div class="scaled step let" id="let-keyword" data-x="450">
+                <h2>The <strong>let</strong> Keyword</h2>
+                <div class="code-container">
+                    <div id="editor">var a = 12; //accessible globally
+
+function myFunction()
+{
+  console.log(a);
+
+  var b = 13; //accessible throughout function
+
+  if (true) {
+    var c = 14; //accessible throughout function
+    console.log(b);
+  }
+
+  console.log(c);
+}
+
+myFunction();</div>
+                    <button class="run-let-code">&#9658;&nbsp;Run</button>
+                </div>
+                <div>
+                    <code class="output"></code>
+                </div>
+            </div>
+            <div class="scaled step" data-x="150" data-z="150" data-y="30">
+                <h1>LOOK AT THAT</h1>
+            </div>
+            <div class="scaled step" data-x="-150" data-z="75" data-y="-35" data-rotate-y="-90">
+                <h1>AWESOME!!!</h1>
+            </div>
+        </div>
+        <script type="text/javascript" src="assets/javascript/main.js"></script>
+        <script type="text/javascript" src="assets/javascript/impress.js"></script>
+        <script type="text/javascript" src="assets/javascript/ace-min-noconflict/ace.js" charset="utf-8"></script>
+        <script>
+            var editor = ace.edit("editor");
+            editor.setTheme("ace/theme/monokai");
+            editor.getSession().setMode("ace/mode/javascript");
+        </script>
+    </body>
+</html>
