@@ -1,6 +1,3 @@
-/*jshint esnext: true */
-"use strict";
-
 (function () {
     "use strict";
 
@@ -9,10 +6,10 @@
     };
 
     var editorsContent = {
-        ".let .editor": "var foo = 1;\n\nfunction theFunction()\n{\n  console.log(foo);\n\n  var bar = 2;\n\n  if (true)\n  {\n    var baz = 3;\n    console.log(bar);\n  }\n\n  console.log(baz);\n}\n\ntheFunction();",
-        ".redeclare .editor": "var a = 0;\nvar a = 1;\n\nconsole.log(a);\n\nfunction theFunction()\n{\n  var b = 2;\n  var b = 3;\n\n  console.log(b);\n}\n\ntheFunction();",
-        ".const .editor": "const foo = {\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\"\n};\n\nconsole.log(foo);\n\nfoo.lastName = \"Travolta\";\n\nconsole.log(foo);\n\nfoo = {};",
-        ".parameters .editor": "function theFunction(foo = \"PHP\", bar = \"is not\", baz = \"awesome\")\n{\n  console.log(foo, bar, baz);\n}\n\ntheFunction(\"Javascript\", \"is\");"
+        ".let .editor":        "var foo = 1;\n\nfunction theFunction()\n{\n  console.log(foo);\n\n  var bar = 2;\n\n  if (true)\n  {\n    var baz = 3;\n    console.log(bar);\n  }\n\n  console.log(baz);\n}\n\ntheFunction();",
+        ".redeclare .editor":  "var a = 0;\nvar a = 1;\n\nconsole.log(a);\n\nfunction theFunction()\n{\n  var b = 2;\n  var b = 3;\n\n  console.log(b);\n}\n\ntheFunction();",
+        ".const .editor":      "const foo = {\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\"\n};\n\nconsole.log(foo);\n\nfoo.lastName = \"Travolta\";\n\nconsole.log(foo);\n\nfoo = {};",
+        ".parameters .editor": "function theFunction(a = \"JavaScript\", b = \"is\", c = \"awesome\")\n{\n  console.log(a, b, c);\n}\n\ntheFunction();"
     };
 
     var scaleAllSteps = function scaleAllSteps() {

@@ -6,58 +6,12 @@
         fontSize: "22px"
     };
 
-    let editorsContent = {
-        ".let .editor": `var foo = 1;
-
-function theFunction()
-{
-  console.log(foo);
-
-  var bar = 2;
-
-  if (true)
-  {
-    var baz = 3;
-    console.log(bar);
-  }
-
-  console.log(baz);
-}
-
-theFunction();`,
-        ".redeclare .editor": `var a = 0;
-var a = 1;
-
-console.log(a);
-
-function theFunction()
-{
-  var b = 2;
-  var b = 3;
-
-  console.log(b);
-}
-
-theFunction();`,
-        ".const .editor": `const foo = {
-  "firstName": "John",
-  "lastName": "Doe"
-};
-
-console.log(foo);
-
-foo.lastName = "Travolta";
-
-console.log(foo);
-
-foo = {};`,
-        ".parameters .editor": `function theFunction(a = "JavaScript", b = "is", c = "awesome")
-{
-  console.log(a, b, c);
-}
-
-theFunction();`
-};
+    var editorsContent = {
+        ".let .editor":        "var foo = 1;\n\nfunction theFunction()\n{\n  console.log(foo);\n\n  var bar = 2;\n\n  if (true)\n  {\n    var baz = 3;\n    console.log(bar);\n  }\n\n  console.log(baz);\n}\n\ntheFunction();",
+        ".redeclare .editor":  "var a = 0;\nvar a = 1;\n\nconsole.log(a);\n\nfunction theFunction()\n{\n  var b = 2;\n  var b = 3;\n\n  console.log(b);\n}\n\ntheFunction();",
+        ".const .editor":      "const foo = {\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\"\n};\n\nconsole.log(foo);\n\nfoo.lastName = \"Travolta\";\n\nconsole.log(foo);\n\nfoo = {};",
+        ".parameters .editor": "function theFunction(a = \"JavaScript\", b = \"is\", c = \"awesome\")\n{\n  console.log(a, b, c);\n}\n\ntheFunction();"
+    };
 
     let scaleAllSteps = function () {
         const SCALE = "0.1";
