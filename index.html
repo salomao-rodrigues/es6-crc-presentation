@@ -17,65 +17,105 @@
             </div>
             <div class="scaled step" id="intro">
                 <h1>ECMAScript 6</h1>
-                <p>Run through basic new features</p>
+                <p class="text-center">Run through basic new features</p>
             </div>
-            <div class="scaled step" id="contents" data-x="150">
-                <h2>Contents</h2>
-                <ul>
-                    <li>What is it?</li>
-                    <li>Why do I need it</li>
+            <div class="scaled step" id="what-is-es6" data-x="150">
+                <h2>What is ECMAScript 6</h2>
+                <ul class="bit-smaller">
+                    <li>Also known as <strong>ECMAScript 2015</strong> or <strong>Harmony</strong></li>
+                    <li>Latest version of the ECMAScript standard</li>
+                    <li>ES6 is a significant update to the language, the <strong>first update since</strong> ES5 was standardized in <strong>2009</strong></li>
                 </ul>
             </div>
-            <div class="scaled step" data-x="300">
-                <h2>The <strong>var</strong> keyword</h2>
+            <div class="scaled step" id="how-to-use" data-x="300">
+                <h2>How can I use it?</h2>
+                <p><a target="self" href="http://kangax.github.io/compat-table/es6/">Do you feel lucky?</a></p>
+                <p>Better use a transpiler:</p>
                 <ul>
-                    <li>Function scoped</li>
-                    <li>Error prone</li>
-                    <li>Less readable</li>
-                    <li>Harder to debug</li>
+                    <li><a target="self" href="https://github.com/babel/babel">Babel</a></li>
+                    <li><a target="self" href="https://github.com/google/traceur-compiler">Traceur</a></li>
                 </ul>
-
+                <p class="text-center">This will convert your code to ES5</p>
             </div>
-            <div class="scaled step let" id="let-keyword" data-x="450">
-                <h2>The <strong>let</strong> Keyword</h2>
+            <div class="scaled step" id="what-is-new" data-x="150" data-z="300" data-rotate-y="180">
+                <h2>Lets dig into<br>what's new!</h2>
+            </div>
+            <div class="scaled step" id="let-key-word" data-x="0" data-z="300" data-rotate-y="180">
+                <h2>The <i>let</i> keyword</h2>
+                <p>New way of defining variables</p>
+                <p>Why do we need it?</p>
+                <p>What is it good for?</p>
+            </div>
+            <div class="scaled step" id="let-good-for" data-x="-150" data-z="300" data-rotate-y="180">
+            <img src="assets/images/let-no-hoist.png">
+                <p>Unlike <strong>var</strong>...</p>
+                <ul>
+                    <li>No Hoisting - Block scoped</li>
+                    <li>Less error prone</li>
+                    <li>Easier to debug</li>
+                    <li>Less memory leaks</li>
+                </ul>
+            </div>
+            <div class="scaled step let" id="lets-try" data-x="-300" data-z="300" data-rotate-y="180">
+                <h2><i>let</i>&#039;s give it a try</h2>
                 <div class="code-container">
-                    <div id="editor">var a = 12; //accessible globally
-
-function myFunction()
-{
-  console.log(a);
-
-  var b = 13; //accessible throughout function
-
-  if (true) {
-    var c = 14; //accessible throughout function
-    console.log(b);
-  }
-
-  console.log(c);
-}
-
-myFunction();</div>
-                    <button class="run-let-code">&#9658;&nbsp;Run</button>
+                    <div class="editor"></div>
+                    <button class="run-code">&#9658;&nbsp;Run</button>
                 </div>
                 <div>
                     <code class="output"></code>
                 </div>
             </div>
-            <div class="scaled step" data-x="150" data-z="150" data-y="30">
-                <h1>LOOK AT THAT</h1>
+            <div class="scaled step redeclare" id="let-redeclare" data-x="-450" data-z="300" data-rotate-y="180">
+                <h2><i>let</i>&#039;s re-declare variables</h2>
+                <div class="code-container">
+                    <div class="editor"></div>
+                    <button class="run-code">&#9658;&nbsp;Run</button>
+                </div>
+                <div>
+                    <code class="output"></code>
+                </div>
             </div>
-            <div class="scaled step" data-x="-150" data-z="75" data-y="-35" data-rotate-y="-90">
-                <h1>AWESOME!!!</h1>
+            <div class="scaled step" id="new-var" data-x="-300" data-y="-150" data-z="300" data-rotate-y="180" data-rotate-z="180">
+                <h2>Awesome</h2>
+                <p class="text-center">so... <i><strong>let</strong></i> is the new <i><strong>var</strong></i>, right?</p>
+            </div>
+            <div class="scaled step" id="not-so-fast" data-x="-150" data-y="-150" data-z="300" data-rotate-y="180" data-rotate-z="180">
+                <h1>Not so fast...</h1>
+            </div>
+            <div class="scaled step" id="const-key-word" data-x="0" data-y="-150" data-z="300" data-rotate-y="180" data-rotate-z="180">
+                <h2>The <i>const</i> keyword</h2>
+            </div>
+            <div class="scaled step" id="what" data-x="150" data-y="-150" data-z="300" data-rotate-y="180" data-rotate-z="180">
+                <h1>What?</h1>
+                <img src="assets/images/cat-what.jpg">
+            </div>
+            <div class="scaled step" id="const-goods" data-x="300" data-y="-150" data-z="300" data-rotate-y="180" data-rotate-z="180">
+                <h2>The <i>const</i> keyword</h2>
+                <ul>
+                    <li>No hoisting</li>
+                    <li>Assignment during runtime</li>
+                    <li>Reference only</li>
+                </ul>
+            </div>
+            <div class="scaled step const" id="const-try" data-x="450" data-y="-150" data-z="300" data-rotate-y="180" data-rotate-z="180">
+                <h2>The <i>const</i> keyword</h2>
+                <div class="code-container">
+                    <div class="editor"></div>
+                    <button class="run-code">&#9658;&nbsp;Run</button>
+                </div>
+            </div>
+            <div class="scaled step parameters" id="default-params" data-x="600" data-y="-150" data-z="300" data-rotate-y="180" data-rotate-z="180">
+                <h2>Default parameters</h2>
+                <div class="code-container">
+                    <div class="editor"></div>
+                    <button class="transpile-me"><a href="https://babeljs.io/repl/" target="self">Transpile me</a></button><button class="run-code">&#9658;&nbsp;Run</button>
+                </div>
+                <p class="tip"><i>tip: pass undefined to use default</i></p>
             </div>
         </div>
-        <script type="text/javascript" src="assets/javascript/main.js"></script>
-        <script type="text/javascript" src="assets/javascript/impress.js"></script>
         <script type="text/javascript" src="assets/javascript/ace-min-noconflict/ace.js" charset="utf-8"></script>
-        <script>
-            var editor = ace.edit("editor");
-            editor.setTheme("ace/theme/monokai");
-            editor.getSession().setMode("ace/mode/javascript");
-        </script>
+        <script type="text/javascript" src="assets/javascript/main-es5.js"></script>
+        <script type="text/javascript" src="assets/javascript/impress.js"></script>
     </body>
 </html>

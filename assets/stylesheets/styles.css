@@ -8,8 +8,12 @@ body {
     color: #333;
 }
 
-ul {
-    text-align: left;
+.text-center {
+    text-align: center;
+}
+
+.bit-smaller {
+    font-size: 40px;
 }
 
 .step {
@@ -38,17 +42,48 @@ ul {
     right: 5%;
 }
 
-#editor {
+ul {
+    line-height: 1.5em;
+}
+
+p, ul {
+    text-align: left;
+}
+
+.tip {
+    font-size: 0.75em;
+}
+
+.editor {
     width: 100%;
     height: 550px;
     text-align: left;
     font-size: 22px;
 }
 
+.parameters .editor {
+    height: 500px;
+    font-size: 20px !important; /* overwrites dynamically inserted style attribute */
+}
+
+.parameters h2 {
+    margin: 40px auto;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
 .code-container {
     text-align: right;
 }
-.run-let-code {
+
+.transpile-me {
+    float: left;
+}
+
+.run-code, .transpile-me {
     -moz-box-shadow:inset 0px 1px 0px 0px #a6827e;
     -webkit-box-shadow:inset 0px 1px 0px 0px #a6827e;
     box-shadow:inset 0px 1px 0px 0px #a6827e;
@@ -74,7 +109,7 @@ ul {
     text-shadow:0px 1px 0px #4d3534;
     margin-top:10px;
 }
-.run-let-code:hover {
+.run-code:hover {
     background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #634b30), color-stop(1, #7d5d3b));
     background:-moz-linear-gradient(top, #634b30 5%, #7d5d3b 100%);
     background:-webkit-linear-gradient(top, #634b30 5%, #7d5d3b 100%);
@@ -84,7 +119,7 @@ ul {
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#634b30', endColorstr='#7d5d3b',GradientType=0);
     background-color:#634b30;
 }
-.run-let-code:active {
+.run-code:active {
     position:relative;
     top:1px;
 }
