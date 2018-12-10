@@ -1,6 +1,7 @@
 # es6-crc-presentation
 ECMAScript 6 presentation for CRC
 
-### Instructions
+Watch the presentation here:
+https://salomao-rodrigues.github.io/es6-crc-presentation
 
-Git checkout, double click index.html
+Or clone the project and open the index.html file.
